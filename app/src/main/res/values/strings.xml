@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">熟能生巧</string>
+    <string name="action_send">Send</string>
+    <string name="action_settings">Settings</string>
 
     <string-array name="mainData_array">
         <item>1.布局和视图</item>

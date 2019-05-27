@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.dqy.technicalsolution">
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -8,8 +9,11 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".chapter.ndkrenderscript.NdkRenderscriptActivity"></activity>
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".chapter.communicationnetwork.ShowWebInfoActivity"></activity>
+        <activity android:name=".chapter.hardwaremultimediainteraction.IntegrateDeviceLocationActivity" />
+        <activity android:name=".chapter.ndkrenderscript.NdkRenderscriptActivity" />
         <activity android:name=".chapter.systeminteraction.SystemInteractionActivity" />
         <activity android:name=".chapter.graphicsdrawing.GraphicsDrawingActivity" />
         <activity android:name=".chapter.datapersistence.DataPersistenceActivity" />

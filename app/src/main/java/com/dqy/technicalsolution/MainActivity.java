@@ -2,12 +2,16 @@ package com.dqy.technicalsolution;
 
 import android.content.Context;
 import android.content.Intent;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.dqy.technicalsolution.chapter.communicationnetwork.CommunicationNetworkActivity;
 import com.dqy.technicalsolution.chapter.datapersistence.DataPersistenceActivity;
@@ -28,6 +32,13 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        ActionBar actionBar = getSupportActionBar();
+        //
+        actionBar.setDisplayHomeAsUpEnabled(true);
+        //
+        actionBar.setTitle(" 示例代码大全");
+        //
+        //actionBar.setSubtitle("ActionBar Recipes");
         setContentView(R.layout.activity_main);
         mContext=MainActivity.this;
         lv_main=findViewById(R.id.lv_main);
@@ -69,5 +80,21 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.support,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case android.R.id.home:
+                Toast.makeText(this,"Home",Toast.LENGTH_LONG).show();
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 }
