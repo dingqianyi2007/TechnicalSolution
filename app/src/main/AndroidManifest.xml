@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".chapter.communicationnetwork.CommunicationNetworkActivity"></activity>
+        <activity android:name=".chapter.ndkrenderscript.NdkRenderscriptActivity"></activity>
+        <activity android:name=".chapter.systeminteraction.SystemInteractionActivity" />
+        <activity android:name=".chapter.graphicsdrawing.GraphicsDrawingActivity" />
+        <activity android:name=".chapter.datapersistence.DataPersistenceActivity" />
+        <activity android:name=".chapter.hardwaremultimediainteraction.HardwareMultimediaInteractionActivity" />
+        <activity android:name=".chapter.communicationnetwork.CommunicationNetworkActivity" />
         <activity android:name=".chapter.uerinteraction.UserInteractionActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

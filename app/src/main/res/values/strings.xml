@@ -63,4 +63,75 @@
         <item>3.13 使用NFC传输数据</item>
         <item>3.14 USB连接</item>
     </string-array>
+
+    <string-array name="hardwareMultimediaInteraction_array">
+        <item>4.1 整合设备位置</item>
+        <item>4.2 地图位置</item>
+        <item>4.3 在地图上标记位置</item>
+        <item>4.4 监控位置地区</item>
+        <item>4.5 拍摄照片和视频</item>
+        <item>4.6 自定义摄像头覆盖层</item>
+        <item>4.7 录制音频</item>
+        <item>4.8 自定义视频采集</item>
+        <item>4.9 添加语音识别</item>
+        <item>4.10 播放音频/视频</item>
+        <item>4.11 播放音效</item>
+        <item>4.13 监控罗盘方向</item>
+        <item>4.14 从媒体内容中获取元数据</item>
+        <item>4.15 检测用户移动</item>
+    </string-array>
+    <string-array name="dataPersistence_array">
+        <item>5.1 制作首选项界面</item>
+        <item>5.2 显示自定义首选项</item>
+        <item>5.3 简单数据存储</item>
+        <item>5.4 读写文件</item>
+        <item>5.5 以资源的形式使用文件</item>
+        <item>5.6 管理数据库</item>
+        <item>5.7 查询数据库</item>
+        <item>5.8 备份数据</item>
+        <item>5.9 分享数据库</item>
+        <item>5.10 分享SharedPreference</item>
+        <item>5.11 分享其他数据</item>
+        <item>5.12 集成系统文档</item>
+    </string-array>
+    <string-array name="systemInteraction_array">
+        <item>6.1 后台通知</item>
+        <item>6.2 创建定时和周期任务</item>
+        <item>6.3 定时执行周期任务</item>
+        <item>6.4 创建粘性操作</item>
+        <item>6.5 长时间运行的后台机制</item>
+        <item>6.6 启动其他应用程序</item>
+        <item>6.7 启动系统应用程序</item>
+        <item>6.8 让其他应用程序自动启动你的</item>
+        <item>6.9 与联系人交互</item>
+        <item>6.10 读取设备媒体和文档</item>
+        <item>6.11 保存设备媒体和文档</item>
+        <item>6.12 读取消息数据</item>
+        <item>6.13 与日历交互</item>
+        <item>6.14 执行日志代码</item>
+        <item>6.15 创建后台工作线程</item>
+        <item>6.16 自定义任务栈</item>
+        <item>6.17 实现AppWidget</item>
+        <item>6.18 支持受限制的配置文件</item>
+    </string-array>
+    <string-array name="graphicsDrawing_array">
+        <item>7.1 用Drawable做背景</item>
+        <item>7.2 创建自定义状态的Drawable</item>
+        <item>7.3 将遮罩应用与图片</item>
+        <item>7.4 在视图内容上绘制</item>
+        <item>7.5 高性能绘制</item>
+        <item>7.6 提取图片和调色板</item>
+        <item>7.7 平铺Drawable元素</item>
+        <item>7.8 使用可缩放的向量资源</item>
+    </string-array>
+    <string-array name="ndkRenderscript_array">
+        <item>8.1 AndroidNDK</item>
+        <item>8.2 使用JNI添加原生位</item>
+        <item>8.3 构建纯原生Activity</item>
+        <item>8.4 RenderScript</item>
+        <item>8.5 使用RenderScript过滤图片</item>
+        <item>8.6 使用RenderScript操作图片</item>
+        <item>8.7 使用模糊滤镜仿造透明覆盖层</item>
+        <item></item>
+    </string-array>
 </resources>
