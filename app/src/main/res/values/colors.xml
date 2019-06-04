@@ -6,4 +6,16 @@
     <color name="primaryGreen">#259b24</color>
     <color name="darkGreen">#0a7e07</color>
     <color name="accentGreen">#d0f8ce</color>
+
+    <color name="white">#ff00ff</color>
+    <color name="blue">#0000ff</color>
+
+    <color name="text_checkbox">#000000</color>
+    <color name="accentPink">#d0f8ce</color>
+
+    <!-- theme -->
+    <color name="primaryBlue">#0000ff</color>
+    <color name="primaryDarkBlue">#0055ff</color>
+    <color name="controlNormalGreen">#259b24</color>
+    <color name="controlActivatedGreen">#259b50</color>
 </resources>
