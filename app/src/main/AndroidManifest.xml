@@ -12,8 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".chapter.layoutview.StyledComponentsActivity"
-            android:theme="@style/BaseAppTheme"></activity>
+        <activity android:name=".chapter.layoutview.CreateCustomViewActivity"></activity>
+        <activity android:name=".chapter.layoutview.DarkHideFullActivity" />
+        <activity
+            android:name=".chapter.layoutview.StyledComponentsActivity"
+            android:theme="@style/BaseAppTheme" />
         <activity android:name=".chapter.communicationnetwork.ShowWebInfoActivity" />
         <activity android:name=".chapter.hardwaremultimediainteraction.IntegrateDeviceLocationActivity" />
         <activity android:name=".chapter.ndkrenderscript.NdkRenderscriptActivity" />

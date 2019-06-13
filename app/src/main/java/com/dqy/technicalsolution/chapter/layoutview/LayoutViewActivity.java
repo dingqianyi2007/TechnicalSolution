@@ -32,6 +32,9 @@ public class LayoutViewActivity extends AppCompatActivity {
                     case 0:
                         startActivity(new Intent(LayoutViewActivity.this,StyledComponentsActivity.class));
                         break;
+                    case 1:
+                        startActivity(new Intent(LayoutViewActivity.this,DarkHideFullActivity.class));
+                        break;
                     default:
                         break;
                 }
