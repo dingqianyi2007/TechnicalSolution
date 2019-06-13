@@ -40,4 +40,5 @@ public class DarkHideFullActivity extends AppCompatActivity {
         );
 
     }
-}
+    }
+
