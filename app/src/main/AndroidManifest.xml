@@ -12,7 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".chapter.layoutview.CreateCustomViewActivity"></activity>
+        <activity android:name=".chapter.layoutview.LayoutChangeAnimationCustomActivity"></activity>
+        <activity android:name=".chapter.layoutview.LayoutChangeAnimationActivity" />
+        <activity android:name=".chapter.layoutview.FlipperActivity1" />
+        <activity android:name=".chapter.layoutview.FlipperActivity" />
+        <activity android:name=".chapter.layoutview.CreateAnimatorViewActivity" />
+        <activity android:name=".chapter.layoutview.CreateCustomViewActivity" />
         <activity android:name=".chapter.layoutview.DarkHideFullActivity" />
         <activity
             android:name=".chapter.layoutview.StyledComponentsActivity"

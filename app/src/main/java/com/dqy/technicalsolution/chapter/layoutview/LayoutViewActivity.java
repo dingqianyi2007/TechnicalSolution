@@ -17,6 +17,7 @@ public class LayoutViewActivity extends AppCompatActivity {
     private Context mContext;
     private ListView lv_layout_view;
     private ArrayAdapter mAdapter;
+    int a;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +38,27 @@ public class LayoutViewActivity extends AppCompatActivity {
                         break;
                     case 2:
                         startActivity(new Intent(LayoutViewActivity.this,CreateCustomViewActivity.class));
+                        break;
+                    case 3:
+                         a=(int)(Math.random()*(3))+1;
+                        if(a == 1 ) {
+                            startActivity(new Intent(LayoutViewActivity.this, CreateAnimatorViewActivity.class));
+                        }
+                        if(a == 2){
+                            startActivity(new Intent(LayoutViewActivity.this, FlipperActivity.class));
+                        }
+                        if(a == 3){
+                            startActivity(new Intent(LayoutViewActivity.this, FlipperActivity1.class));
+                        }
+                        break;
+                    case 4:
+                         a=(int)(Math.random()*(2))+1;
+                        if(a == 1 ) {
+                            startActivity(new Intent(LayoutViewActivity.this, LayoutChangeAnimationActivity.class));
+                        }
+                        if(a == 2){
+                            startActivity(new Intent(LayoutViewActivity.this, LayoutChangeAnimationCustomActivity.class));
+                        }
                         break;
                     default:
                         break;
