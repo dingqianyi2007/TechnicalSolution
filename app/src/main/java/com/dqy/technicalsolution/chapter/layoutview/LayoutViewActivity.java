@@ -60,6 +60,9 @@ public class LayoutViewActivity extends AppCompatActivity {
                             startActivity(new Intent(LayoutViewActivity.this, LayoutChangeAnimationCustomActivity.class));
                         }
                         break;
+                    case 5:
+                            startActivity(new Intent(LayoutViewActivity.this, UniversalActivity.class));
+                        break;
                     default:
                         break;
                 }
