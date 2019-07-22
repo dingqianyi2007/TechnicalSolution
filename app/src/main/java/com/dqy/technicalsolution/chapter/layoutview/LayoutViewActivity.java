@@ -63,6 +63,15 @@ public class LayoutViewActivity extends AppCompatActivity {
                     case 5:
                             startActivity(new Intent(LayoutViewActivity.this, UniversalActivity.class));
                         break;
+                    case 6:
+                        startActivity(new Intent(LayoutViewActivity.this, EmptyAdapterActivity.class));
+                        break;
+                    case 7:
+                        startActivity(new Intent(LayoutViewActivity.this, CustomAdapterActivity.class));
+                        break;
+                    case 8:
+                        startActivity(new Intent(LayoutViewActivity.this, CustomHeaderAdapterActivity.class));
+                        break;
                     default:
                         break;
                 }
