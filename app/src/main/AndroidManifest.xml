@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.dqy.technicalsolution">
-
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -12,7 +11,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".chapter.layoutview.CustomHeaderAdapterActivity"></activity>
+        <activity android:name=".chapter.userinteraction.SupportActionActivity"/>
+        <activity android:name=".chapter.layoutview.SimpleRecyclerActivity"/>
+        <activity android:name=".chapter.layoutview.ScrollActivity"/>
+        <activity android:name=".chapter.layoutview.CustomViewTransformationActivity"/>
+        <activity android:name=".chapter.layoutview.CreatFragmentAnimationActivity" />
+        <activity android:name=".chapter.layoutview.CustomWidgetActivity" />
+        <activity android:name=".chapter.layoutview.CustomHeaderAdapterActivity" />
         <activity android:name=".chapter.layoutview.CustomAdapterActivity" />
         <activity android:name=".chapter.layoutview.EmptyAdapterActivity" />
         <activity android:name=".chapter.layoutview.UniversalActivity" />
@@ -34,11 +39,11 @@
         <activity android:name=".chapter.datapersistence.DataPersistenceActivity" />
         <activity android:name=".chapter.hardwaremultimediainteraction.HardwareMultimediaInteractionActivity" />
         <activity android:name=".chapter.communicationnetwork.CommunicationNetworkActivity" />
-        <activity android:name=".chapter.uerinteraction.UserInteractionActivity" />
+        <activity android:name=".chapter.userinteraction.UserInteractionActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
+                <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

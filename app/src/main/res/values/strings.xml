@@ -136,4 +136,7 @@
         <item>8.7 使用模糊滤镜仿造透明覆盖层</item>
         <item></item>
     </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

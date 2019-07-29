@@ -20,7 +20,7 @@ import com.dqy.technicalsolution.chapter.hardwaremultimediainteraction.HardwareM
 import com.dqy.technicalsolution.chapter.layoutview.LayoutViewActivity;
 import com.dqy.technicalsolution.chapter.ndkrenderscript.NdkRenderscriptActivity;
 import com.dqy.technicalsolution.chapter.systeminteraction.SystemInteractionActivity;
-import com.dqy.technicalsolution.chapter.uerinteraction.UserInteractionActivity;
+import com.dqy.technicalsolution.chapter.userinteraction.UserInteractionActivity;
 
 
 public class MainActivity extends AppCompatActivity {

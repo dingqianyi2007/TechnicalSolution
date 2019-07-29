@@ -1,8 +1,11 @@
-package com.dqy.technicalsolution.chapter.uerinteraction;
+package com.dqy.technicalsolution.chapter.userinteraction;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -22,5 +25,17 @@ public class UserInteractionActivity extends AppCompatActivity {
         lv_user_interaction=findViewById(R.id.lv_user_interaction);
         mAdapter = ArrayAdapter.createFromResource(mContext,R.array.userInteraction_array,android.R.layout.simple_list_item_1);
         lv_user_interaction.setAdapter(mAdapter);
+        lv_user_interaction.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                switch (position){
+                    case 0:
+                        startActivity(new Intent(UserInteractionActivity.this, SupportActionActivity.class));
+                        break;
+                    default:
+                        break;
+                }
+            }
+        });
     }
 }

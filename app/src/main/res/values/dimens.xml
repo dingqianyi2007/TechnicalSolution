@@ -7,6 +7,6 @@
     <dimen name="buttonWidth">100dp</dimen>
     <dimen name="radio_margin">10dp</dimen>
     <dimen name="button_margin">10dp</dimen>
-
-
+    <dimen name="inset_margin">8dp</dimen>
+    <dimen name="connector_stroke">2dp</dimen>
 </resources>

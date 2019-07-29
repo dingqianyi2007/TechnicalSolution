@@ -72,6 +72,24 @@ public class LayoutViewActivity extends AppCompatActivity {
                     case 8:
                         startActivity(new Intent(LayoutViewActivity.this, CustomHeaderAdapterActivity.class));
                         break;
+                    case 9:
+                        startActivity(new Intent(LayoutViewActivity.this, CustomWidgetActivity.class));
+                        break;
+                    case 10:
+                        startActivity(new Intent(LayoutViewActivity.this, CreatFragmentAnimationActivity.class));
+                        break;
+                    case 11:
+                        a=(int)(Math.random()*(2))+1;
+                        if(a == 1 ) {
+                            startActivity(new Intent(LayoutViewActivity.this, CustomViewTransformationActivity.class));
+                        }
+                        if(a == 2){
+                            startActivity(new Intent(LayoutViewActivity.this, ScrollActivity.class));
+                        }
+                        break;
+                    case 12:
+                        startActivity(new Intent(LayoutViewActivity.this, SimpleRecyclerActivity.class));
+                        break;
                     default:
                         break;
                 }
