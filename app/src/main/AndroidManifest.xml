@@ -12,7 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".chapter.userinteraction.CustomHomeActivity"></activity>
+        <activity android:name=".chapter.userinteraction.TextWatcherActivity"></activity>
+        <activity android:name=".chapter.userinteraction.CustomHomeActivity" />
         <activity android:name=".chapter.userinteraction.CustomBackActivity" />
         <activity android:name=".chapter.userinteraction.OptionsActivity" />
         <activity android:name=".chapter.userinteraction.CustomDialogActivity" />

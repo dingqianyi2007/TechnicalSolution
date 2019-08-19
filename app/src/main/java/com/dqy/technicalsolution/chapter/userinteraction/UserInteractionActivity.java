@@ -62,6 +62,9 @@ public class UserInteractionActivity extends AppCompatActivity {
                     case 8:
                         startActivity(new Intent(UserInteractionActivity.this,CustomHomeActivity.class));
                         break;
+                    case 9:
+                        startActivity(new Intent(UserInteractionActivity.this,TextWatcherActivity.class));
+                        break;
                     default:
                         break;
                 }
