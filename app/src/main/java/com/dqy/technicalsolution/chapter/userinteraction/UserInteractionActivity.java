@@ -10,12 +10,15 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.dqy.technicalsolution.R;
+import com.dqy.technicalsolution.chapter.layoutview.CustomViewTransformationActivity;
 import com.dqy.technicalsolution.chapter.layoutview.LayoutViewActivity;
+import com.dqy.technicalsolution.chapter.layoutview.ScrollActivity;
 
 public class UserInteractionActivity extends AppCompatActivity {
     private Context mContext;
     private ListView lv_user_interaction;
     private ArrayAdapter mAdapter;
+    int a;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +34,33 @@ public class UserInteractionActivity extends AppCompatActivity {
                 switch (position){
                     case 0:
                         startActivity(new Intent(UserInteractionActivity.this, SupportActionActivity.class));
+                        break;
+                    case 2:
+                        startActivity(new Intent(UserInteractionActivity.this, LockActivity.class));
+                        break;
+                    case 3:
+                        startActivity(new Intent(UserInteractionActivity.this, HandControlRotationActivity.class));
+                        break;
+                    case 4:
+                        startActivity(new Intent(UserInteractionActivity.this, ActionActivity.class));
+                        break;
+                    case 5:
+                        a=(int)(Math.random()*(2))+1;
+                        if(a == 1 ) {
+                            startActivity(new Intent(UserInteractionActivity.this, DialogActivity.class));
+                        }
+                        if(a == 2){
+                            startActivity(new Intent(UserInteractionActivity.this, CustomDialogActivity.class));
+                        }
+                        break;
+                    case 6:
+                        startActivity(new Intent(UserInteractionActivity.this,OptionsActivity.class));
+                        break;
+                    case 7:
+                        startActivity(new Intent(UserInteractionActivity.this,CustomBackActivity.class));
+                        break;
+                    case 8:
+                        startActivity(new Intent(UserInteractionActivity.this,CustomHomeActivity.class));
                         break;
                     default:
                         break;
