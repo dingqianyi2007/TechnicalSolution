@@ -10,9 +10,6 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.dqy.technicalsolution.R;
-import com.dqy.technicalsolution.chapter.layoutview.CustomViewTransformationActivity;
-import com.dqy.technicalsolution.chapter.layoutview.LayoutViewActivity;
-import com.dqy.technicalsolution.chapter.layoutview.ScrollActivity;
 
 public class UserInteractionActivity extends AppCompatActivity {
     private Context mContext;
@@ -64,6 +61,12 @@ public class UserInteractionActivity extends AppCompatActivity {
                         break;
                     case 9:
                         startActivity(new Intent(UserInteractionActivity.this,TextWatcherActivity.class));
+                        break;
+                    case 10:
+                        startActivity(new Intent(UserInteractionActivity.this, CustomKeyboardEnterActivity.class));
+                        break;
+                    case 11:
+                        startActivity(new Intent(UserInteractionActivity.this, HideSoftInputActivity.class));
                         break;
                     default:
                         break;
