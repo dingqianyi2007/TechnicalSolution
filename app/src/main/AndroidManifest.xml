@@ -12,7 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".chapter.userinteraction.HideSoftInputActivity"></activity>
+        <activity android:name=".chapter.userinteraction.RotateZoomImageViewActivity"></activity>
+        <activity android:name=".chapter.userinteraction.PanScrollViewActivity" />
+        <activity android:name=".chapter.userinteraction.PanGestureScrollViewActivity" />
+        <activity android:name=".chapter.userinteraction.HideSoftInputActivity" />
         <activity android:name=".chapter.userinteraction.CustomKeyboardEnterActivity" />
         <activity android:name=".chapter.userinteraction.TextWatcherActivity" />
         <activity android:name=".chapter.userinteraction.CustomHomeActivity" />

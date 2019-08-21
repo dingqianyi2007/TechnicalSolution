@@ -10,6 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.dqy.technicalsolution.R;
+import com.dqy.technicalsolution.chapter.userinteraction.custom.PanScrollView;
 
 public class UserInteractionActivity extends AppCompatActivity {
     private Context mContext;
@@ -67,6 +68,18 @@ public class UserInteractionActivity extends AppCompatActivity {
                         break;
                     case 11:
                         startActivity(new Intent(UserInteractionActivity.this, HideSoftInputActivity.class));
+                        break;
+                    case 12:
+                        a=(int)(Math.random()*(3))+1;
+                        if(a == 1 ) {
+                            startActivity(new Intent(UserInteractionActivity.this, PanGestureScrollViewActivity.class));
+                        }
+                        if(a == 2){
+                            startActivity(new Intent(UserInteractionActivity.this, PanScrollViewActivity.class));
+                        }
+                        if(a == 3){
+                            startActivity(new Intent(UserInteractionActivity.this, RotateZoomImageViewActivity.class));
+                        }
                         break;
                     default:
                         break;
