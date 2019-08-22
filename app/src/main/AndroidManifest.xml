@@ -12,7 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".chapter.userinteraction.RotateZoomImageViewActivity"></activity>
+        <activity android:name=".chapter.userinteraction.RemoteScrollActivity"></activity>
+        <activity android:name=".chapter.userinteraction.DelegateActivity" />
+        <activity android:name=".chapter.userinteraction.RotateZoomImageViewActivity" />
         <activity android:name=".chapter.userinteraction.PanScrollViewActivity" />
         <activity android:name=".chapter.userinteraction.PanGestureScrollViewActivity" />
         <activity android:name=".chapter.userinteraction.HideSoftInputActivity" />
