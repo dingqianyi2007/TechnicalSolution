@@ -9,4 +9,5 @@
     <dimen name="button_margin">10dp</dimen>
     <dimen name="inset_margin">8dp</dimen>
     <dimen name="connector_stroke">2dp</dimen>
+    <dimen name="header_height">150dp</dimen>
 </resources>

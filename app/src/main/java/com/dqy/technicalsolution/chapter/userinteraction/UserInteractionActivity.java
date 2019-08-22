@@ -81,6 +81,21 @@ public class UserInteractionActivity extends AppCompatActivity {
                             startActivity(new Intent(UserInteractionActivity.this, RotateZoomImageViewActivity.class));
                         }
                         break;
+                    case 13:
+                        a=(int)(Math.random()*(2))+1;
+                        if(a == 1 ) {
+                            startActivity(new Intent(UserInteractionActivity.this, DelegateActivity.class));
+                        }
+                        if(a == 2){
+                            startActivity(new Intent(UserInteractionActivity.this, RemoteScrollActivity.class));
+                        }
+                        break;
+                    case 14:
+                            startActivity(new Intent(UserInteractionActivity.this, DisallowActivity.class));
+                        break;
+                    case 15:
+                        startActivity(new Intent(UserInteractionActivity.this, DragTouchActivity.class));
+                        break;
                     default:
                         break;
                 }
