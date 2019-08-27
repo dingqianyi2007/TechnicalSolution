@@ -96,6 +96,9 @@ public class UserInteractionActivity extends AppCompatActivity {
                     case 15:
                         startActivity(new Intent(UserInteractionActivity.this, DragTouchActivity.class));
                         break;
+                    case 16:
+                        startActivity(new Intent(UserInteractionActivity.this, NativeActivity.class));
+                        break;
                     default:
                         break;
                 }
