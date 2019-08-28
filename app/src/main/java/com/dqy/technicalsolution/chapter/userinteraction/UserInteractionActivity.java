@@ -99,6 +99,15 @@ public class UserInteractionActivity extends AppCompatActivity {
                     case 16:
                         startActivity(new Intent(UserInteractionActivity.this, NativeActivity.class));
                         break;
+                    case 17:
+                        a=(int)(Math.random()*(2))+1;
+                        if(a == 1 ) {
+                            startActivity(new Intent(UserInteractionActivity.this, PagerActivity.class));
+                        }
+                        if(a == 2){
+                            startActivity(new Intent(UserInteractionActivity.this, FragmentPagerActivity.class));
+                        }
+                        break;
                     default:
                         break;
                 }
