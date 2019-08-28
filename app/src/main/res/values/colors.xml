@@ -19,4 +19,7 @@
     <color name="primaryDarkBlue">#0055ff</color>
     <color name="controlNormalGreen">#259b24</color>
     <color name="controlActivatedGreen">#259b50</color>
+
+    <color name="tabTextDefault">#99ffffff</color>
+    <color name="tabTextSelected">#ffffffff</color>
 </resources>

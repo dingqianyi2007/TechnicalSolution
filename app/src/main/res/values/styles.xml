@@ -15,6 +15,11 @@
         <item name="android:windowAnimationStyle">
             @style/ActivityAnimation
         </item>
+
+        <item name="android:windowContentOverlay">@null</item>
+
+        <item name="textColorTabDefault">@color/tabTextDefault</item>
+        <item name="textColorTabSelected">@color/tabTextSelected</item>
     </style>
 
     <!-- 小部件样式 -->

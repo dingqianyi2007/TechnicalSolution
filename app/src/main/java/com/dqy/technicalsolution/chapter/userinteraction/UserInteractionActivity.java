@@ -108,6 +108,9 @@ public class UserInteractionActivity extends AppCompatActivity {
                             startActivity(new Intent(UserInteractionActivity.this, FragmentPagerActivity.class));
                         }
                         break;
+                    case 18:
+                        startActivity(new Intent(UserInteractionActivity.this, ActionTabsActivity.class));
+                        break;
                     default:
                         break;
                 }
