@@ -17,6 +17,7 @@ public class CommunicationNetworkActivity extends AppCompatActivity {
     private Context mContext;
     private ListView lv_communication_network;
     private ArrayAdapter mAdapter;
+    private int a;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,8 +32,13 @@ public class CommunicationNetworkActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 switch (position) {
                     case 0:
-                        Intent layoutViewIntent = new Intent(CommunicationNetworkActivity.this, ShowWebInfoActivity.class);
-                        startActivity(layoutViewIntent);
+                        a=(int)(Math.random()*(2))+1;
+                        if(a == 1 ) {
+                            startActivity(new Intent(CommunicationNetworkActivity.this, ShowWebInfoActivity.class));
+                        }
+                        if(a == 2){
+                            startActivity(new Intent(CommunicationNetworkActivity.this, LocalWebInfoActivity.class));
+                        }
                         break;
                 }
             }

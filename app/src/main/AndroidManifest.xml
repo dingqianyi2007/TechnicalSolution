@@ -12,7 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".chapter.userinteraction.ActionTabsActivity"/>
+        <activity android:name=".chapter.communicationnetwork.LocalWebInfoActivity"></activity>
+        <activity android:name=".chapter.userinteraction.ActionTabsActivity" />
         <activity android:name=".chapter.userinteraction.FragmentPagerActivity" />
         <activity android:name=".chapter.userinteraction.PagerActivity" />
         <activity android:name=".chapter.userinteraction.NativeActivity" />
