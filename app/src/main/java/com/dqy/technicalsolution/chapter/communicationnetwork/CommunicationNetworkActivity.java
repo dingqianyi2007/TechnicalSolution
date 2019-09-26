@@ -40,6 +40,33 @@ public class CommunicationNetworkActivity extends AppCompatActivity {
                             startActivity(new Intent(CommunicationNetworkActivity.this, LocalWebInfoActivity.class));
                         }
                         break;
+                    case 1:
+                            startActivity(new Intent(CommunicationNetworkActivity.this, InterceptWebEventActivity.class));
+                        break;
+                    case 2:
+                        startActivity(new Intent(CommunicationNetworkActivity.this, AccessWebViewJSActivity.class));
+                        break;
+                    case 3:
+                        startActivity(new Intent(CommunicationNetworkActivity.this, WebImageActivity.class));
+                        break;
+                    case 4:
+                        startActivity(new Intent(CommunicationNetworkActivity.this, DownloadActivity.class));
+                        break;
+                    case 5:
+                        a=(int)(Math.random()*(2))+2;
+                        if(a == 1 ) {
+                            startActivity(new Intent(CommunicationNetworkActivity.this, SearchActivity.class));
+                        }
+                        if(a == 2){
+                            startActivity(new Intent(CommunicationNetworkActivity.this, Search1Activity.class));
+                        }
+                        if(a == 3){
+                            startActivity(new Intent(CommunicationNetworkActivity.this, AuthActivity.class));
+                        }
+                        break;
+                    case 6:
+                        startActivity(new Intent(CommunicationNetworkActivity.this, DecodeJSONActivity.class));
+                        break;
                 }
             }
         });

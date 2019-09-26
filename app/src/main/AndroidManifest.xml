@@ -3,16 +3,25 @@
     package="com.dqy.technicalsolution">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".chapter.communicationnetwork.LocalWebInfoActivity"></activity>
+        <activity android:name=".chapter.communicationnetwork.DecodeJSONActivity"></activity>
+        <activity android:name=".chapter.communicationnetwork.AuthActivity" />
+        <activity android:name=".chapter.communicationnetwork.Search1Activity" />
+        <activity android:name=".chapter.communicationnetwork.SearchActivity" />
+        <activity android:name=".chapter.communicationnetwork.DownloadActivity" />
+        <activity android:name=".chapter.communicationnetwork.WebImageActivity" />
+        <activity android:name=".chapter.communicationnetwork.AccessWebViewJSActivity" />
+        <activity android:name=".chapter.communicationnetwork.InterceptWebEventActivity" />
+        <activity android:name=".chapter.communicationnetwork.LocalWebInfoActivity" />
         <activity android:name=".chapter.userinteraction.ActionTabsActivity" />
         <activity android:name=".chapter.userinteraction.FragmentPagerActivity" />
         <activity android:name=".chapter.userinteraction.PagerActivity" />
