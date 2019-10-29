@@ -67,6 +67,15 @@ public class CommunicationNetworkActivity extends AppCompatActivity {
                     case 6:
                         startActivity(new Intent(CommunicationNetworkActivity.this, DecodeJSONActivity.class));
                         break;
+                    case 7:
+                        a=(int)(Math.random()*(2))+1;
+                        if(a == 1 ) {
+                            startActivity(new Intent(CommunicationNetworkActivity.this, FeedActivity.class));
+                        }
+                        if(a == 2){
+                            startActivity(new Intent(CommunicationNetworkActivity.this, PullFeedActivity.class));
+                        }
+                        break;
                 }
             }
         });

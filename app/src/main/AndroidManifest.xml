@@ -13,7 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".chapter.communicationnetwork.DecodeJSONActivity"></activity>
+        <activity android:name=".chapter.communicationnetwork.FeedActivity"></activity>
+        <activity android:name=".chapter.communicationnetwork.DecodeJSONActivity" />
         <activity android:name=".chapter.communicationnetwork.AuthActivity" />
         <activity android:name=".chapter.communicationnetwork.Search1Activity" />
         <activity android:name=".chapter.communicationnetwork.SearchActivity" />
