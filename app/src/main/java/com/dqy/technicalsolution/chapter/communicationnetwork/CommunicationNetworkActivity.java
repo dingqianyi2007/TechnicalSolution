@@ -76,6 +76,8 @@ public class CommunicationNetworkActivity extends AppCompatActivity {
                             startActivity(new Intent(CommunicationNetworkActivity.this, PullFeedActivity.class));
                         }
                         break;
+                    case 9:
+                        startActivity(new Intent(CommunicationNetworkActivity.this,SmsActivity.class));
                 }
             }
         });

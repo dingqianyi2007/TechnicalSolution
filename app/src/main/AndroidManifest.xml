@@ -4,6 +4,8 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS"/>
 
     <application
         android:allowBackup="true"
@@ -13,7 +15,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".chapter.communicationnetwork.FeedActivity"></activity>
+        <activity android:name=".chapter.communicationnetwork.SmsActivity"></activity>
+        <activity android:name=".chapter.communicationnetwork.FeedActivity" />
         <activity android:name=".chapter.communicationnetwork.DecodeJSONActivity" />
         <activity android:name=".chapter.communicationnetwork.AuthActivity" />
         <activity android:name=".chapter.communicationnetwork.Search1Activity" />
@@ -85,6 +88,12 @@
             </intent-filter>
         </activity>
         <activity android:name=".chapter.layoutview.LayoutViewActivity" />
+
+        <receiver android:name=".chapter.communicationnetwork.custom.SmsReceiver">
+            <intent-filter android:priority="5">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>
