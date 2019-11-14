@@ -78,6 +78,8 @@ public class CommunicationNetworkActivity extends AppCompatActivity {
                         break;
                     case 9:
                         startActivity(new Intent(CommunicationNetworkActivity.this,SmsActivity.class));
+                    case 10:
+                        startActivity(new Intent(CommunicationNetworkActivity.this,ExchangeActivity.class));
                 }
             }
         });
