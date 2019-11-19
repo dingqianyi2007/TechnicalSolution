@@ -9,6 +9,7 @@
     <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.NFC" />
 
     <application
         android:allowBackup="true"
@@ -18,7 +19,19 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".chapter.communicationnetwork.ExchangeActivity"></activity>
+        <activity android:name=".chapter.communicationnetwork.BeamActivity"></activity>
+        <activity
+            android:name=".chapter.communicationnetwork.NfcActivity"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="application/com.example.androidrcipes.beamtext" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".chapter.communicationnetwork.ExchangeActivity" />
         <activity android:name=".chapter.communicationnetwork.SmsActivity" />
         <activity android:name=".chapter.communicationnetwork.FeedActivity" />
         <activity android:name=".chapter.communicationnetwork.DecodeJSONActivity" />
