@@ -1,2 +1,2 @@
 # TechnicalSolution
-Android开发示例代码大全&amp;Android开发艺术探索
+Android 所有功能实践，持续更新
